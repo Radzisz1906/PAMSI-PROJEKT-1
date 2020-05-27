@@ -11,8 +11,8 @@ using namespace std;
 using namespace std::chrono;
 
 /*FUNKCJA POMOCNICZA DO quick_sort
-Funkcja ma na celu zmusic quick_sort do uzywania elementu úrodkowego jako pivot, zamiast elementu ostatniego.
-Poprawia to wydajnoúÊ w niektÛrych przypadkach*/
+Funkcja ma na celu zmusic quick_sort do uzywania elementu ≈õrodkowego jako pivot, zamiast elementu ostatniego.
+Poprawia to wydajno≈õƒá w niekt√≥rych przypadkach*/
 long int pivot_ze_srodka(long int tab[],long int pierwszy_elem, long int ostatni_elem)
 {
     long int mid = pierwszy_elem+(ostatni_elem-pierwszy_elem)/2;
@@ -124,7 +124,7 @@ void merge ( long int tab[],long int pierwszy_elem, long int ostatni_elem, long 
     long int it_pocz=pierwszy_elem;
 
 
- // GLOWNY ALGORYTM SORTUJACY I £•CZACY DWIE POLOWY
+ // GLOWNY ALGORYTM SORTUJACY I ≈ÅƒÑCZACY DWIE POLOWY
     while (it_PP < PP && it_LP < LP )
     {
         if(tempP[it_PP] <= tempL[it_LP])
@@ -141,7 +141,7 @@ void merge ( long int tab[],long int pierwszy_elem, long int ostatni_elem, long 
             it_pocz++;
     }
 
-    // SORTOWANIE I £ACZENIE ELEMENT”W KT”RE POMIELIåMY
+    // SORTOWANIE I ≈ÅACZENIE ELEMENT√ìW KT√ìRE POMIELI≈öMY
     while (it_PP < PP )
     {
         tab[it_pocz] = tempP[it_PP];
@@ -163,17 +163,17 @@ void mergesort(long int tab[],long int pierwszy_elem, long int ostatni_elem)
     if (pierwszy_elem < ostatni_elem )  // WYKONYWANIE DOPOKI NIE DOSZLISMY DO OSTATNIEGO ELEMENTU
     {
        long int  srodek = pierwszy_elem + (ostatni_elem - pierwszy_elem)/2;  // WYBIERANIE ELEMENTU SRODKOWEGO
-        mergesort(tab,pierwszy_elem,srodek);   //  REKURENCYJNE WYKONYWANIE ALGORYTMU NA OBU PO£OWACH
+        mergesort(tab,pierwszy_elem,srodek);   //  REKURENCYJNE WYKONYWANIE ALGORYTMU NA OBU PO≈ÅOWACH
         mergesort(tab,srodek+1,ostatni_elem); //
-        merge(tab,pierwszy_elem,ostatni_elem,srodek); // £•CZENIE ELEMENT”W W POSORTOWANY CI•G
+        merge(tab,pierwszy_elem,ostatni_elem,srodek); // ≈ÅƒÑCZENIE ELEMENT√ìW W POSORTOWANY CIƒÑG
     }
 }
 /*********************************************************************************************/
 
 /*********************************FUNKCJE POMOCNICZE*************************************************/
-/*wyp_full_los - tworzenie dowolnie duøej tablicy nieposortowanych liczb*/
-/*posortowana_odwrotnie - tworzenie tablicy liczb posortowanych w odwrotnej kolejnoúci*/
-/*wypelniona_procent - tworzenie tablicy liczb, ktÛra juø czÍúciowo jest posortowana*/
+/*wyp_full_los - tworzenie dowolnie du≈ºej tablicy nieposortowanych liczb*/
+/*posortowana_odwrotnie - tworzenie tablicy liczb posortowanych w odwrotnej kolejno≈õci*/
+/*wypelniona_procent - tworzenie tablicy liczb, kt√≥ra ju≈º czƒô≈õciowo jest posortowana*/
 void wyp_full_los(long int tab[], long int rozm)
 {
     srand(time(NULL));
@@ -242,6 +242,7 @@ void odwracanie(long int tab[], long int rozmiar)
 
 
         }
+cout<<"Ciekawa muzyka";
 return 0;
 }
 
